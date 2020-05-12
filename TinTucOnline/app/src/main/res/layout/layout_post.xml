@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_anh"
+        android:layout_width="160dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/tv_tieude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_anh"
+        android:maxLength="30"
+        android:text="Trần Ngọc Ninh"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_mota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tieude"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_anh"
+        android:maxLength="75"
+        android:text="Lớp CNTT-K15B" />
+
+</RelativeLayout>

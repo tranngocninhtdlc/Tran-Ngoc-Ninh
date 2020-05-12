@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DocBaoOnline</string>
+    <string name="facebook_app_id">203265303593360</string>
+    <string name="fb_login_protocol_scheme">fb203265303593360</string>
+</resources>

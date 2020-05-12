@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.tintuconline">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/doctintuconline"
+        android:label="TinTứcOnline"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider203265303593360"
+            android:exported="true" />
+
+        <activity android:name=".Activity.ScreenSlideActivity" />
+        <activity android:name=".Activity.NoiDungTin" />
+        <activity android:name=".Activity.TinTucOfflineActivity" />
+        <activity android:name=".Activity.SettingActivity" />
+        <activity android:name=".Activity.MyPost" />
+        <activity android:name=".Activity.ContentDetailsPosts" />
+        <activity android:name=".Activity.PostsTuoiTreActivity" />
+    </application>
+
+</manifest>
